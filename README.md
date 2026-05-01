@@ -3,7 +3,7 @@
 A desktop application for exploring and applying classical image processing techniques — built with Python and OpenCV.
 
 <p align="center">
-  <img src="img.jpg" width="500"/>
+  <img src="img_prc.png" width="500"/>
 </p>
 
 ---
