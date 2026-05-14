@@ -18,7 +18,7 @@ pip install opencv-contrib-python numpy pillow
 
 ---
 
-## [Click Here To Download Latest Release](https://github.com/Sudhanva-K-Upadhya/Image-processing-/releases/tag/v1.0)
+## [Click Here To Download Latest Release](https://github.com/Sudhanva-K-Upadhya/Image-processing-/releases/latest)
 
 ---
 
