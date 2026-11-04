@@ -1,79 +1,71 @@
-# Image Processor
+<div align="center">
 
-A desktop application for exploring and applying classical image processing techniques, built with Python and OpenCV.
+# Image Lab
 
-![Image Processor](img1.png)
-![Image Processor](img2.png)
+**A desktop playground for classic image processing techniques.**
+
+![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-contrib-5C3EE8?logo=opencv&logoColor=white)
+![PyQt5](https://img.shields.io/badge/GUI-PyQt5-41CD52?logo=qt&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-blue)
+
+<img src="img1.png" width="48%"> <img src="img2.png" width="48%">
+
+### [⬇ Download for Windows (no setup needed)](https://github.com/Sudhanva-K-Upadhya/Image-processing-/releases/latest)
+
+</div>
 
 ---
 
-## Installation
+## Quick start
 
+```bash
+pip install PyQt5 opencv-contrib-python numpy
+python image_lab.py
 ```
-pip install opencv-contrib-python numpy pillow
-```
 
-`tkinter` comes built-in with Python. If it's missing, install it via your system package manager.
-
-### [Click here to Download the software without any dependencies](https://github.com/Sudhanva-K-Upadhya/Image-processing-/releases/latest)
----
-
-## Usage
-
-```
-python image_processor.py
-```
-
-Load an image, pick a technique from the sidebar, and hit Apply.
-
----
-
-## Techniques
-
-| Category | Techniques |
-|---|---|
-| Histogram Processing | Histogram Equalization, CLAHE / Specification |
-| Gray Level Transformations | Linear, Logarithmic, Power Law, Piecewise, Contrast Stretching |
-| Image Enhancement | Point Processing, Image Subtraction, Image Averaging |
-| Spatial Filtering | Smoothing, Sharpening, Order-Statistic, Gradient, Laplacian |
-| Edge & Line Detection | Canny, Sobel, Line Detection, Point Detection |
-| Frequency Domain | Ideal LPF, Gaussian LPF, Homomorphic Filtering |
-| Image Segmentation | Thresholding, Otsu's Method, Region Growing, Watershed |
-| Morphological Operations | Erosion, Dilation, Opening, Closing, Thinning, Convex Hull |
-| Boundary & Shape | Edge Linking, Boundary Detection, Polygon Fitting, Shape Detection |
-| Color & Vision | Gaussian Blur, Color Conversion, Color Masking, Perspective Transform |
-| Live Video & Detection | ArUco Marker Detection, Motion Detection, Anomaly Detection |
-
----
-
-## Libraries
-
-- [opencv-contrib-python](https://pypi.org/project/opencv-contrib-python/) — core image processing and computer vision
-- [numpy](https://numpy.org/) — numerical operations and array manipulation
-- [Pillow](https://python-pillow.org/) — image display integration with Tkinter
-- tkinter — GUI framework (Python built-in)
-
----
+Open an image (or drag and drop one), pick a technique from the sidebar, and adjust its parameters. Results update automatically.
 
 ## Features
 
-- Load any image and apply 40+ processing techniques 
-- Live webcam support for real-time detection tasks
-- Save any output image 
-- Side-by-side result panels
+- **50+ techniques** in 11 categories, each with adjustable parameters
+- **Side-by-side results**, click any card to zoom
+- **Live webcam detection** (ArUco, motion, anomaly) right in the main window
+- **Export** all results at once, or save a single webcam frame
+- Dark, clean UI that scales to your screen
 
----
+## Techniques
 
-## Project Structure
+| Category | Includes |
+|---|---|
+| Histogram Processing | Equalization, Specification, CLAHE |
+| Gray Level Transformations | Linear, Log, Power Law, Piecewise, Contrast Stretching, Bit-Plane Slicing |
+| Image Enhancement | Point Processing, Subtraction, Averaging |
+| Spatial Filtering | Smoothing, Sharpening, Order-Statistic, Gradient, Laplacian |
+| Edge & Line Detection | Sobel / Prewitt / Roberts, Canny, Hough Lines, Point Detection |
+| Frequency Domain | Ideal LPF, Gaussian LPF, Homomorphic |
+| Image Segmentation | Thresholding, Otsu, Region Growing, Split & Merge, K-Means, Watershed |
+| Morphological Operations | Erosion, Dilation, Opening, Closing, Thinning, Convex Hull, Hole Filling |
+| Boundary & Shape | Edge Linking, Boundary Detection, Polygon Fitting, Shape Detection |
+| Color & Vision | Gaussian Blur, Color Conversion, Color Masking, Perspective Transform |
+| Live Video | ArUco Marker, Motion, and Anomaly Detection |
+
+## Build an .exe (Windows)
+
+Put `image_lab.py`, `icon.ico` and `build_exe.bat` in one folder and run the batch file. The app is created at `dist\ImageLab.exe`.
+
+## Built with
+
+[OpenCV](https://opencv.org/) · [NumPy](https://numpy.org/) · [PyQt5](https://pypi.org/project/PyQt5/)
+
+## Project structure
 
 ```
-image_processor.py   # Main application
-img.jpg               # Sample image (optional)
-README.md
+image_lab.py     # the application
+icon.ico         # app icon
+build_exe.bat    # builds the Windows exe
 ```
-
----
 
 ## License
 
-MIT License
+MIT
