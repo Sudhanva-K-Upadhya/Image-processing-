@@ -2,7 +2,8 @@
 
 A desktop application for exploring and applying classical image processing techniques, built with Python and OpenCV.
 
-![Image Processor](img_prc.png)
+![Image Processor](img1.png)
+![Image Processor](img2.png)
 
 ---
 
